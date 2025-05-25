@@ -1,3 +1,21 @@
+/* Write a C++ program that performs the following:
+
+Ask the user how many numbers they want to enter.
+
+Take input of those numbers using a loop.
+
+For each number:
+
+If it's even, use switch to:
+
+Print "Small Even" if number is less than 50
+
+Print "Large Even" if number is 50 or more
+
+If it's odd, use if-else to:
+
+Check whether it's a prime number or not, and print accordingly */
+
 #include<iostream>
 using namespace std;
 int main()
