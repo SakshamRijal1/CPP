@@ -7,7 +7,6 @@ int main()
   float marks;
   int age;
   char verification;
-
   char platform='Y';
   while(platform=='Y'||platform=='y'){
   cout<<"------------------WELCOME TO THE SAKSHAM RIJAL PLARTFORM DASHBOARD----------------"<<endl;
@@ -16,10 +15,8 @@ int main()
   string &refrencename=name;
   cout<<"Enter your marks :"<<endl;
   cin>>marks;
-  
   cout<<name<<",Please enter your age"<<endl;
   cin>>age;
-
   cout<<"Do you want to see your profile(Enter 'Y' if yes or press other keyword if no))"<<endl;
   cin>>verification;
   if(verification=='Y'|| verification=='y'){
@@ -34,6 +31,5 @@ int main()
 else {
   cout<<"Thanks"<<endl;
   break;
-}}
-  
+}}  
 }
