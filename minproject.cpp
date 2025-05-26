@@ -9,7 +9,7 @@ int main()
   char verification;
   char platform='Y';
   while(platform=='Y'||platform=='y'){
-  cout<<"------------------WELCOME TO THE SAKSHAM RIJAL PLARTFORM DASHBOARD----------------"<<endl;
+  cout<<"------------------WELCOME TO THE SAKSHAM RIJAL PLATFORM DASHBOARD----------------"<<endl;
   cout<<"Enter your name:"<<endl;
   getline(cin,name);
   string &refrencename=name;
