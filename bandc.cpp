@@ -8,7 +8,7 @@ int main(){
   int *ptr=&a;//pointer variable
   //2.one pointer variable can be assigned to the other pointer variable of same type
   int *ptr1;
-  *ptr1=*ptr;
+  ptr1=ptr;
   cout<<*ptr1<<endl;
   //3.We can add or subtract the pointer varible but the + and - give us next variable address(value)..For eg if ptr is a pointer which 
   //has address of 1000 then ptr +1 gives next variable adress like (1002 if 2 byte int).
