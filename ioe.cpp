@@ -14,6 +14,6 @@ int main(){
   cin>>n;
   cout<<"The value of A is"<<ar(p,n)<<endl;
   return 0;
-  if()
+
     
 }
