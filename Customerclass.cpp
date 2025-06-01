@@ -8,14 +8,14 @@ class Customer
   double paid;
 
 public:
-  void take(string n, string pr, double p);
+  void take(string name, string product, double paid);
   void display();
 };
-void Customer::take(string n, string pr, double p)
+void Customer::take(string name, string product, double paid)
 {
-  name = n;
-  product = pr;
-  paid = p;
+  this->name = name;
+  this->product = product;
+  this->paid = paid;
 }
 void Customer:: display()
 {
