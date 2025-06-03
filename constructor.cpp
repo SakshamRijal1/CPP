@@ -22,7 +22,7 @@ public:
   {
     this->name = objReal.name;
     rollPtr = new int;
-    *rollPtr = *objReal.rollPtr;
+    *rollPtr = *(objReal.rollPtr);
   }
   void getInfo()
   {
