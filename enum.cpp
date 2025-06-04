@@ -1,21 +1,12 @@
-//WAP TO DEFINE ENUMERATOR WITH YOUR CHOICE .INSTEAD OF DEFAULT VALUE,ASSIGN YOUR OWN INTERGER VALUE TO ENUMERATOR 
 #include<iostream>
 using namespace std;
-
-enum day
-{
-  morning=5,afternoon,night
+enum day{
+  sunday,monday=9,tuesday
 };
 
-int main()
-{
-  day persent= afternoon;
-  day past= morning;
-  day future=night;
-
-  cout << persent<<endl;;
-  cout << past<<endl;
-  cout << future<<endl;
-
-  return 0;
+int main(){
+  day a=monday;
+  cout<<sunday<<a<<tuesday<<endl;
+    
+    return 0;
 }
