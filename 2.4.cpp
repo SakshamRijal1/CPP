@@ -1,45 +1,32 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class Distance {
-private:
-    int meter;
-    int centimeter;
+class Student {
+    int age;
+    int sal;
 
 public:
-    void read() {
-        cout << "Enter meter and centimeter: ";
-        cin >> meter >> centimeter;
+    Student(int a = 0, int s = 0) {  // Constructor
+        age = a;
+        sal = s;
     }
 
-    void display() {
-        cout << "Meters: " << meter << ", Centimeters: " << centimeter << endl;
+    void showSecret(Student &obj) {
+        this->age = obj.age;
+        this->sal = obj.sal;
     }
 
-    friend Distance addDistance(Distance d1, Distance d2);
+    void getInfo() {
+        cout << "Age: " << age << ", Salary: " << sal << endl;
+    }
 };
 
-
-Distance addDistance(Distance d1, Distance d2) {
-    Distance result;
-    result.centimeter = d1.centimeter + d2.centimeter;
-    result.meter = d1.meter + d2.meter;
-
-    if (result.centimeter >= 100) {
-        result.meter += result.centimeter / 100;
-        result.centimeter = result.centimeter % 100;
-    }
-
-    return result;
-}
-
 int main() {
-    Distance d1, d2, d3;
-    d1.read();
-    d2.read();
-    d3 = addDistance(d1, d2);
-    cout << "Sum of distances: ";
-    d3.display();
+    Student s1(12, 67000);
+    Student s2;
+
+    s2.showSecret(s1);  // s2 copies s1's data
+    s2.getInfo();       // prints: Age: 12, Salary: 67000
 
     return 0;
 }
