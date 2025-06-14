@@ -11,14 +11,14 @@ class Teacher{
   salary=s;
  }
  double Teacher::getSalary(){
-  return salary;
+cout<<salary<<endl;
  }
 
 
 int main(){
   Teacher t1;
   t1.setSalary(500);
-  cout<<t1.getSalary()<<endl;
+t1.getSalary();
     
     return 0;
 }
