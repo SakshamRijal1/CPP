@@ -1,6 +1,6 @@
 //abstration==>Hiding uneccesary or sensitive detials and showing only important
 //abstration is used to define the interface of derived classes
-//they cannot be instantiated(objet cannot created)but meant to be inheritaedb
+//they cannot be instantiated(objet cannot created)but meant to be inheritaed
 #include<iostream>
 using namespace std;
 class Shape{
