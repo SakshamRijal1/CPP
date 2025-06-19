@@ -10,7 +10,7 @@ int main()
 
   cout<<"The value of a with manipulating  is "<<setw(10)<<a<<endl;
   cout<<"The value of b with manipulating  is "<<setw(10)<<b<<endl;
-  cout<<"The value of c with manipulating  is "<<setw(5)<<c<<endl;
+  cout<<"The value of c with manipulating  is "<<setw(3)<<c<<endl;
 
 
 }

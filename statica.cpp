@@ -1,13 +1,25 @@
-//static varbale inside function
 #include<iostream>
 using namespace std;
-void fun()
-{
-  int x=0;
-  cout<<"x"<<endl;
-  x++;
-}
+class student{
+  public:
+  int rollNo;
+ static  int stdCount;
+  student()
+  {
+    stdCount++;
+    rollNo=stdCount;
+  }
+  void display()
+  {
+    cout<<"ROll number"<<rollNo<<endl;
+    cout<<stdCount;
+  }
+};
+int student::stdCount=0;
+
 int main(){
-     fun();  
+    student s1;
+student s2;
+s1.display();
     return 0;
 }
