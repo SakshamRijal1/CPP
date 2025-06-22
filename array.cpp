@@ -1,40 +1,55 @@
 #include<iostream>
+#include<string>
 using namespace std;
-class Shop{
-  int itemId[100];
-  int itemPrice[100];
-  int counter;
-  int i;
-  public:
-  void initCounter(){
-    counter=0;
-  }
-  void getPrice();
-  void setPrice();
-};
-void Shop::getPrice()
+class Student{
+string name;
+int marks[5];
+int i;
+float sum=0;
+float avg;
+public:
+void input()
 {
-  cout<<"Enter id of your iteam"<<endl;
-  cin>>itemId[counter];
- cout<<"Enter price of your iteam"<<endl;
- cin>>itemPrice[counter];
-counter++;
-}
-void Shop::setPrice()
-{
-  for(i=0;i<counter;i++)
+  
+
+  cout<<"Enter name"<<endl;
+ cin.ignore();
+  getline(cin,name);
+  cout<<"Enter your marks in 5 subjects"<<endl;
+  for(i=0;i<5;i++)
   {
-    cout<<itemId[i];
-    cout<<itemPrice[i];
+    cin>>marks[i];
   }
+
+
 }
+void display(){
+cout<<"---------------REPORT CARD DASHBOARD------------------"<<endl;
+  cout<<"Name: "<<name<<endl;
+   cout<<"Marks: "<<endl;
+  for(i=0;i<5;i++)
+  {
+  cout<<marks[i]<<endl;
+}
+
+}
+void average()
+{
+  for(i=0;i<5;i++)
+  {
+    sum+=marks[i];
+  }
+  avg=sum/5;
+  cout<<name<<", your average marks is"<<avg<<endl;
+}
+};
+
 int main(){
-    Shop s1;
-    s1.initCounter();
-    s1.getPrice();
-    s1.getPrice();
-    s1.getPrice();
-    s1.getPrice();
-    s1.setPrice();
+    Student S1;
+  
+
+    S1.input();
+    S1.display();
+    S1.average();
     return 0;
 }
