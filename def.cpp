@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-int(int a,int b=9,int c=100)
+int sum(int a,int b=9,int c=100)
 {
   return a+b+c;
 }
 
 int main(){
-    cout<<"The sum of 5and 15 is "
+    cout<<"The sum of 5 and 15 is "<<sum(12);
     return 0;
 }
