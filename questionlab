@@ -1,0 +1,4 @@
+1.WAP to implement run time polymorphism in C++.
+2.Repeat program 1 to illustrate pure virtual function.
+3.WAP to illustrate concept of base class pointer and derived class pointers
+4.WAP using dynamic_cast and typeid operators to illustrate RTTI.
