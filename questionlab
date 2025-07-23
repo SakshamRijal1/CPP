@@ -1,4 +1,9 @@
-1.WAP to implement run time polymorphism in C++.
-2.Repeat program 1 to illustrate pure virtual function.
-3.WAP to illustrate concept of base class pointer and derived class pointers
-4.WAP using dynamic_cast and typeid operators to illustrate RTTI.
+LAB 7: Generic Programming using Templates and Exception Handling
+1.WAP to swap values of two variables using function template.
+2.WAP to implement class template.
+3.WAP to implement template function overloading.
+4.WAP to illustrate overloading of function template with ordinary function.
+5.WAP to illustrate exception handling mechanism.
+6.WAP to implement multiple exception handling using multiple catch statements.
+7.Modify above program to handle multiple exceptions using single catch statement
+8.WAP to illustrate rethrowing an exception.
